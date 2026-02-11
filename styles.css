@@ -15,6 +15,7 @@ body {
     display: block;
     width: 200px;
     height: auto;
+    cursor: pointer;
 }
 
 .navbar {
@@ -40,11 +41,23 @@ body {
     font-size: 18px;
     font-weight: 600;
     text-align: center;
-    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 1px;
 }
 
-.nav-item:hover {
-    transition: color 0.3s ease;
+.nav-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #ffffff;
+    transition: width 0.3s ease-in-out; 
+}
+
+.nav-item:hover::after {
+    width: 100%;
 }
 
 .titre {
@@ -116,6 +129,7 @@ body {
     text-align: center;
     line-height: normal;
     transition: transform 0.1s;
+    text-decoration: none;
 }
 
 .button:hover {
@@ -125,7 +139,6 @@ body {
   box-shadow: 0 7px 7.7px 0 rgba(245, 179, 179, 0.36) inset;
   color: #ffffff;
 }
-
 
 /* INSCRIPTION PAGE */
 
@@ -276,10 +289,10 @@ body {
     color: #ffffff;
 }
 
-/* Recompense page */
+/* RECOMPENSE PAGE */
 
 .annonce{
-    font-family: "lexend", sans-serif;
+    font-family: "Lexend", sans-serif;
     font-weight: 900;
     color: #ffffff;
     font-size: 51px;
@@ -288,34 +301,95 @@ body {
 }
 
 .button-2 {
-    display: flex;
-    width: 356px;
-    margin: 30px auto;
+    display: inline-flex;
     justify-content: center;
-    padding: 11px 32px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    align-items: center;
+    width: fit-content;
+    min-width: 250px;
+    height: 60px;
+    padding: 0 40px;
+    margin: 30px auto;
+    background-color: #ffffff; 
     border-radius: 31px;
-    background: #FFF;
-    color: #eb0000;
+    border: none;
+    cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 20px;
+    color: #eb0000;
     text-align: center;
-    line-height: normal;
-    transition: transform 0.1s;
-
+    text-decoration: none;
+    transition: all 0.2s ease;
 }
 
 .button-2:hover {
     transform: scale(1.05);
-    border-radius: 31px;
     background: #1b1a1a;
     box-shadow: 0 7px 7.7px 0 rgba(245, 179, 179, 0.36) inset;
     color: #ffffff;
 }
-@media screen {
-    
+
+/* RESPONSIVE (MOBILES & TABLETTES) */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .titre {
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    .accroche {
+        font-size: 28px;
+    }
+
+    .registration-card {
+        width: 95%;
+        padding: 30px 20px;
+        margin: 20px auto;
+    }
+
+    .card-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .social-login {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-btn {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .form-group {
+        max-width: 100%;
+    }
+
+    .submit-container {
+        justify-content: center;
+    }
+
+    .btn-decouvrir {
+        width: 100%;
+    }
 }
 
