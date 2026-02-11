@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - FootLocker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="inscription-page">
+
+    <nav class="navbar">
+        <img class="logo" src="assets/logo-footlocker.png" alt="Logo Footlocker" />
+        <div class="nav-links">
+            <a href="/reglement" class="nav-item">Règlement</a>
+            <a href="/commencer" class="nav-item btn-commencer">Commencer</a>
+        </div>
+    </nav>
+
+    <div class="registration-card">
+        <h2 class="card-title">Inscription</h2>
+        <p class="card-subtitle">Connectez-vous à votre compte</p>
+
+        <div class="social-login">
+            <button class="social-btn">
+                <img src="https://www.google.com/favicon.ico" width="20" alt="G"> Sign in with Google
+            </button>
+            <button class="social-btn">
+                Sign in with Apple
+            </button>
+            <button class="social-btn">
+                Sign in with Microsoft
+            </button>
+        </div>
+
+        <p class="divider-text">Ou rentrez vos informations</p>
+
+        <form class="registration-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nom">Nom <span class="required">*</span></label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="instagram">Instagram</label>
+                    <input type="text" id="instagram" name="instagram" placeholder="Nom d'utilisateur instagram">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="prenom">Prénom <span class="required">*</span></label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                </div>
+                <div class="form-group">
+                    <label for="ville">Ville de résidence <span class="required">*</span></label>
+                    <input type="text" id="ville" name="ville" placeholder="Noisy Le Grand" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="naissance">Date de naissance <span class="required">*</span></label>
+                    <input type="text" id="naissance" name="naissance" placeholder="JJ/MM/AAAA" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="EXEMPLE@EXEMPLE.FR" required>
+                </div>
+            </div>
+
+            <div class="submit-container">
+                <button type="submit" class="btn-decouvrir">Découvrir</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

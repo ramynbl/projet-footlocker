@@ -3,11 +3,12 @@ body {
     background: url('assets/bg-red.jpg') no-repeat center center fixed;
     background-size: cover;
     width: 100%;
-    min-width: 1440px;
-    height: 1024px;
+    min-height: 100vh;
     position: relative;
     margin: 0;
 }
+
+/* HOME PAGE  */
 
 .logo {
     display: block;
@@ -23,7 +24,7 @@ body {
     width: 100%;
     height: 80px;
     box-sizing: border-box;
-    background-color: #151515;
+    background-color: transparent;
 }
 
 .nav-links {
@@ -123,4 +124,150 @@ body {
   background: #1b1a1a;
   box-shadow: 0 7px 7.7px 0 rgba(245, 179, 179, 0.36) inset;
   color: #ffffff;
+}
+
+/* INSCRIPTION PAGE */
+
+.registration-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3F3F3;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 40px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+.card-title {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: #eb0000;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.card-subtitle {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: white;
+    border: none;
+    width: 240px;
+    height: 50px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.divider-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #444;
+    margin: 20px 0 40px 0;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 380px;
+}
+
+.form-group label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+}
+
+.required {
+    color: #eb0000;
+}
+
+.form-group input {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-group input::placeholder {
+    color: #ccc;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-decouvrir {
+    width: 180px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-size: 16px;
+}
+
+.btn-decouvrir:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+@media screen {
+    
 }
