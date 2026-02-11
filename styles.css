@@ -6,6 +6,7 @@ body {
     min-height: 100vh;
     position: relative;
     margin: 0;
+    margin-bottom: 100px;
 }
 
 /* HOME PAGE  */
@@ -43,7 +44,6 @@ body {
 }
 
 .nav-item:hover {
-    opacity: 0.7;
     transition: color 0.3s ease;
 }
 
@@ -185,6 +185,11 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
+.social-btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
 .divider-text {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -266,6 +271,8 @@ body {
 .btn-decouvrir:hover {
     transform: scale(1.05);
     transition: transform 0.2s;
+    background-color: #1b1a1a;
+    color: #ffffff;
 }
 
 @media screen {
