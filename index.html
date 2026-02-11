@@ -7,33 +7,47 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <nav class="navbar">
-        <a href="/index.html"><img class="logo" src="assets/logo-footlocker.png" alt="Logo Footlocker" /></a>
+        <a href="index.html"><img class="logo" src="assets/logo-footlocker.png" alt="Logo Footlocker"></a>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
         <div class="nav-links">
-            <a href="/reglement" class="nav-item">Règlement</a>
-            <a href="/commencer" class="nav-item btn-commencer">Commencer</a>
+            <a href="reglement.html" class="nav-item">Règlement</a>
+            <a href="index.html" class="nav-item">Commencer</a>
         </div>
     </nav>
 
-    <div class="titre">
-        <img src="/assets/clean-your-kicks.png" alt="Clean your kicks" class="clean-your-kicks">
-        <p class="accroche">Jouez, Cleanez, Gagnez ! <br> Jeu 100% GAGNANT !</p>
-        <img src="/assets/new-balance.png" alt="new balance" class="photo-hero">
-    </div>
+    <main class="home-container">
+        
+        <img src="assets/clean-your-kicks.png" alt="Clean your kicks" class="clean-your-kicks">
+        
+        <p class="accroche">
+            Jouez, Cleanez, Gagnez ! <br>
+            Jeu 100% GAGNANT !
+        </p>
 
-     <div class="frame-2">
-        <div class="rectangle"></div>
-        <div class="rectangle-2"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-        <div class="rectangle"></div>
-      </div>
+        <img src="assets/new-balance.png" alt="New Balance" class="photo-hero">
 
-      <a href="inscription.html" class="button">Jouer</a>
-      
+        <div class="pagination-dots">
+            <div class="dot"></div>
+            <div class="dot active"></div> <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <a href="inscription.html" class="cta-button">Jouer</a>
+
+    </main>
+
 </body>
 </html>

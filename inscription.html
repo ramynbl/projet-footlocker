@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription - FootLocker</title>
+    <title>Inscription FootLocker</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="inscription-page">
 
     <nav class="navbar">
-        <a href="/index.html"><img class="logo" src="assets/logo-footlocker.png" alt="Logo Footlocker" /></a>
+        <a href="index.html"><img class="logo" src="assets/logo-footlocker.png" alt="Logo Footlocker"></a>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
         <div class="nav-links">
-            <a href="/reglement" class="nav-item">Règlement</a>
-            <a href="/commencer" class="nav-item btn-commencer">Commencer</a>
+            <a href="reglement.html" class="nav-item">Règlement</a>
+            <a href="index.html" class="nav-item">Commencer</a>
         </div>
     </nav>
 
@@ -23,55 +33,47 @@
 
         <div class="social-login">
             <button class="social-btn">
-                <img src="https://www.google.com/favicon.ico" alt="G"> Se connecter avec Google
+                <img src="https://www.google.com/favicon.ico" width="20" alt=""> Google
             </button>
-            <button class="social-btn">
-                Se connecter avec Apple
-            </button>
-            <button class="social-btn">
-                Se connecter avec Microsoft
-            </button>
+            <button class="social-btn">Apple</button>
+            <button class="social-btn">Microsoft</button>
         </div>
 
         <p class="divider-text">Ou rentrez vos informations</p>
 
-        <form class="registration-form">
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="nom">Nom <span class="required">*</span></label>
-                    <input type="text" id="nom" name="nom" placeholder="Nom" required>
-                </div>
-                <div class="form-group">
-                    <label for="telephone">Numéro <span class="required">*</span></label>
-                    <input type="tel" id="telephone" name="telephone" placeholder="06 12 34 56 78" required>
-                </div>
+        <form class="registration-form" action="recompense.html">
+            
+            <div class="form-group">
+                <label>Nom <span class="required">*</span></label>
+                <input type="text" placeholder="Votre nom" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Numéro <span class="required">*</span></label>
+                <input type="tel" placeholder="06 12 34 56 78" required>
             </div>
 
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="prenom">Prénom <span class="required">*</span></label>
-                    <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
-                </div>
-                <div class="form-group">
-                    <label for="ville">Ville de résidence <span class="required">*</span></label>
-                    <input type="text" id="ville" name="ville" placeholder="Noisy Le Grand" required>
-                </div>
+            <div class="form-group">
+                <label>Prénom <span class="required">*</span></label>
+                <input type="text" placeholder="Votre prénom" required>
             </div>
 
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="naissance">Date de naissance <span class="required">*</span></label>
-                    <input type="date" id="naissance" name="naissance" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" placeholder="exemple@email.fr" required>
-                </div>
+            <div class="form-group">
+                <label>Ville <span class="required">*</span></label>
+                <input type="text" placeholder="Noisy Le Grand" required>
             </div>
 
-            <div class="submit-container">
-                <button type="submit" class="btn-decouvrir">Découvrir</button>
+            <div class="form-group">
+                <label>Date de naissance <span class="required">*</span></label>
+                <input type="date" required>
             </div>
+
+            <div class="form-group">
+                <label>Email <span class="required">*</span></label>
+                <input type="email" placeholder="exemple@mail.fr" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Découvrir</button>
         </form>
     </main>
 
