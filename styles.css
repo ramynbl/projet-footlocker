@@ -282,6 +282,22 @@ img {
     color: white;
 }
 
+.checkbox {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 500;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.checkbox input {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
 /* =========================================
                     CHOIX
    ========================================= */

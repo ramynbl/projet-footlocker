@@ -18,13 +18,6 @@
     <nav class="navbar">
         <a href="index.html"><img class="logo" src="assets/logo-footlocker.png" alt="Logo Footlocker"></a>
 
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="burger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-
         <div class="nav-links">
             <a href="reglement.html" class="nav-item">Règlement</a>
             <a href="index.html" class="nav-item">Commencer</a>
@@ -75,6 +68,12 @@
             <div class="form-group">
                 <label>Email <span class="required">*</span></label>
                 <input type="email" placeholder="exemple@mail.fr" required>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="reglement" required>
+                <label for="reglement">J'accepte <a href="reglement.html">le règlement du jeu</a> <span
+                        class="required">*</span></label>
             </div>
 
             <button type="submit" class="btn-submit">Jouer</button>
