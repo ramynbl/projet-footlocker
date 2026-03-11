@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription FootLocker</title>
+    <title>Règlement Clean Your Kicks - FootLocker</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,17 @@
 
 <body>
 
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><img class="logo" src="assets/logo-footlocker.png" alt="Logo Footlocker"></a>
+
+            <div class="nav-links">
+                <a href="reglement.html" class="nav-item">Règlement</a>
+                <a href="choix.html" class="nav-item">Commencer</a>
+            </div>
+        </nav>
+    </header>
+
     <div class="page-wrapper">
         <img src="assets/logo-footlocker.png" alt="Logo Footlocker blanc" class="logo-foot-locker">
         <img src="assets/clean-your-kicks.png" alt="Clean your kicks" class="clean-your-kicks">
@@ -22,17 +33,34 @@
 
     <main class="registration-card">
 
-        <div class="reglement-container">
-            <h3 class="reglement-title">
-                Règlement du jeu
-            </h3>
+        <h2 class="reglement-title">Règlement</h2>
+
+        <div class="reglement-content">
+            <p>Bienvenue dans <strong style="color: var(--primary-red);">Clean Your Kicks</strong> ! Voici les règles
+                officielles pour participer :</p>
+
+            <p><strong>Règles du jeu :</strong></p>
+            <ul>
+                <li>Vous avez exactement <strong>15 secondes</strong> pour nettoyer la paire de sneakers qui apparaîtra
+                    à l'écran.</li>
+                <li>Frottez (ou cliquez) le plus vite possible pour enlever toute la saleté avant la fin du chronomètre
+                    !</li>
+                <li>Le jeu est 100% gagnant. Une fois la paire validée, un tirage au sort immédiat désignera votre lot.
+                </li>
+            </ul>
+
+            <p><strong>Lots à gagner :</strong></p>
+            <ul>
+                <li>Des places de concert exclusives pour <strong>Dua Lipa</strong>.</li>
+                <li>Des <strong>ensembles vestimentaires Nike</strong> (haut et bas au choix).</li>
+                <li>Une <strong>paire de sneakers</strong> de votre choix parmi la sélection FootLocker.</li>
+                <li>Des <strong>cartes cadeaux FootLocker</strong> d'une valeur allant de 5€ à 100€.</li>
+            </ul>
         </div>
 
         <div class="button-container">
-            <!-- Bouton redirigeant vers la dernière page ou on était plus tard-->
-            <a href="index.html" class="cta-button">Retour</a>
-
-            <a href="inscription.html" class="cta-button">Jouer</a>
+            <a href="index.html" class="btn-secondary">Retour</a>
+            <a href="inscription.html" class="btn-primary">Jouer</a>
         </div>
 
     </main>
