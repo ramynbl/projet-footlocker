@@ -380,21 +380,4 @@ img {
     margin-top: 15px;
 }
 
-/* =========================================
-                    JEU
-   ========================================= */
-.timer-bar {
-    width: 80%;
-    height: 12px;
-    background: rgba(255,255,255,0.3);
-    border-radius: 6px;
-    overflow: hidden;
-  }
-  
-.timer-fill {
-    height: 100%;
-    background: white;
-    border-radius: 6px;
-  }
-
 /* RESPONSIVE */
